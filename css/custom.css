@@ -1,0 +1,11 @@
+/* ESTILOS PERSONALIZADOS*/
+
+.body,
+.container {
+    height: 100vh;
+}
+
+.table tr {
+    cursor: pointer;
+    user-select: none;
+}
