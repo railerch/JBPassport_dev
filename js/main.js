@@ -7,8 +7,9 @@ fn.test_fn();
 // Ventana login
 if (window.location.pathname.includes("login.php")) {
     let loginBtn = document.getElementById("login-btn");
+    let claveInp = document.getElementById("clave");
 
-    loginBtn.addEventListener("click", function () {
+    function iniciar_sesion() {
         let usuario = document.getElementById("usuario").value;
         let clave = document.getElementById("clave").value;
 
@@ -36,7 +37,18 @@ if (window.location.pathname.includes("login.php")) {
                         break;
                 }
             })
+    }
+
+    loginBtn.addEventListener("click", function () {
+        iniciar_sesion()
     })
+
+    claveInp.addEventListener("keypress", function (e) {
+        console.log(e.key);
+        if (e.key == "Enter") iniciar_sesion();
+    })
+
+
 }
 
 // ========================================= MAIN
@@ -59,7 +71,5 @@ if (window.location.pathname.includes("jbp-admin.php") || window.location.pathna
     document.getElementById("logout-btn").addEventListener("click", function () {
         window.location.replace("login.php");
     });
-
-    // Lado administrador JBP
 }
 

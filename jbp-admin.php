@@ -174,7 +174,7 @@ if (!$_SESSION['ejecutivo']) {
 
             <!-- MODAL CLIENTES -->
             <div class="modal fade" id="clientes" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document" style="min-width:30%">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalTitleId"><i class="icon-user"></i> Seleccionar cliente</h5>
