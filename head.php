@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/fontello.css">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
