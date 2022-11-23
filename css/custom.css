@@ -35,15 +35,22 @@ hr {
     color: #fff;
 }
 
-.accordion-button {
+.accordion-button,
+.modal-header {
     background-image: linear-gradient(to bottom, #0094ae, #004754);
 }
 
-.accordion-button h4 {
+.accordion-button h4,
+.modal-header {
     color: #fff;
 }
 
-.accordion-body {
+.modal-footer {
+    background-color: #333;
+}
+
+.accordion-body,
+.modal-body {
     background-color: #333;
     color: #fff;
 }

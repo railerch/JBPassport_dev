@@ -178,11 +178,10 @@ if (!$_SESSION['ejecutivo']) {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalTitleId"><i class="icon-user"></i> Seleccionar cliente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="table-responsive">
-                                <table class="table table-hover table-stripped">
+                                <table class="table table-hover table-striped table-dark">
                                     <thead>
                                         <tr>
                                             <th scope="col">ID Cliente</th>
@@ -208,7 +207,7 @@ if (!$_SESSION['ejecutivo']) {
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
