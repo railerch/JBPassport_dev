@@ -2,7 +2,7 @@
 session_start();
 
 // VALIDAR INICIO DE SESION
-if (!$_SESSION['admin']) {
+if (!$_SESSION['ejecutivo']) {
     header('location:login.php');
 }
 
@@ -16,23 +16,23 @@ if (!$_SESSION['admin']) {
 </head>
 
 <body>
-    <div class="container col-md-6 py-3">
+    <div id="admin-ui" class="container col-md-6 rounded-bottom py-3 my-md-3">
         <!-- ESTATUS DE CUENTA -->
         <header class="d-flex justify-content-center">
             <div class="col-3">
                 <img id="login-logo" class="img-fluid" src="img/logo.png" alt="JBPassport">
             </div>
             <div class="col-md-4 d-flex flex-column justify-content-center">
-                <h2 class="text-muted">JBPassport</h2>
+                <h2>JBPassport</h2>
                 <p>Estado de Cuenta de cliente<br>Profit PLUS Movil Access</p>
             </div>
         </header>
         <hr>
         <main class="">
-            <h3>Ejecutivo: <span id="admin" style="color:crimson">John Doe</span></h3>
+            <h3 id="tipo-usuario">Ejecutivo: <span id="id-usuario">John Doe</span></h3>
             <hr>
             <div class="mb-3">
-                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#clientes"><i class="icon-user"></i> Cliente: <span id="co-cli" class="text-warning">123456</span></button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#clientes"><i class="icon-user"></i> Cliente: <span id="co-cli" class="text-warning">123456</span></button>
             </div>
             <div id="montos" class="rounded mt-3 p-2" style="background-color:lightblue">
                 <p class="mb-1"><b>Fecha:</b> <span id="fecha"></span></p>
@@ -53,7 +53,7 @@ if (!$_SESSION['admin']) {
                         <div id="fuelling-uplift" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#registros-tbl">
                             <div class="accordion-body">
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
+                                    <table class="table table-striped table-hover table-dark">
                                         <thead>
                                             <tr>
                                                 <th>BLT</th>
@@ -86,7 +86,7 @@ if (!$_SESSION['admin']) {
                         <div id="estatus-financiero" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#registros-tbl">
                             <div class="accordion-body">
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
+                                    <table class="table table-striped table-hover table-dark">
                                         <thead>
                                             <tr>
                                                 <th>Fecha</th>
@@ -124,7 +124,7 @@ if (!$_SESSION['admin']) {
                                     <label for="direccion" class="form-label">Dirección</label>
                                     <input type="text" class="form-control" name="direccion" id="direccion" aria-describedby="helpId" placeholder="">
                                 </div>
-                                <button type="button" id="actualizar-datos" class="btn btn-outline-secondary float-end"><i class="icon-ok"></i> Actualizar</button>
+                                <button type="button" id="actualizar-datos" class="btn btn-outline-primary"><i class="icon-ok"></i> Actualizar</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ if (!$_SESSION['admin']) {
                                     <label for="direccion" class="form-label">Monto a pagar:</label>
                                     <input type="number" class="form-control" step="0.1" min="0" name="monto-pago" id="monto-pago" placeholder="Indique el monto">
                                 </div>
-                                <button type="button" id="actualizar-datos" class="btn btn-outline-secondary float-end"><i class="icon-ok"></i> Aceptar</button>
+                                <button type="button" id="actualizar-datos" class="btn btn-outline-primary"><i class="icon-ok"></i> Aceptar</button>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,8 @@ if (!$_SESSION['admin']) {
                         </h2>
                         <div id="gestion-jbp" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#registros-tbl">
                             <div class="accordion-body">
-                                <div id="aviso-usuario"></div>
+                                <h4 id="id-usuario">John Doe</h4>
+                                <hr>
                                 <div class="mb-3">
                                     <ul class="list-group list-group-numbered">
                                         <li class="list-group-item">Volumen de ventas: <span id="volumen-ventas">525254</span></li>
@@ -167,7 +168,7 @@ if (!$_SESSION['admin']) {
                 </div>
 
                 <div class="text-center pt-3">
-                    <a href="main-ctrl.php?cerrarSesion=true" id="logout-btn" class="btn btn-secondary"><i class="icon-logout"></i> Cerrar sesión</a>
+                    <a href="main-ctrl.php?cerrarSesion=true" id="logout-btn" class="btn btn-outline-primary"><i class="icon-logout"></i> Cerrar sesión</a>
                 </div>
             </div>
 
@@ -207,7 +208,7 @@ if (!$_SESSION['admin']) {
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>

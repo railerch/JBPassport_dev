@@ -9,17 +9,17 @@ if (@$_GET['iniciarSesion']) {
     $clave = $_POST['clave'];
 
     switch ($usuario) {
-        case 'admin':
+        case 'ejecutivo':
             if ($clave == 123456) {
-                $_SESSION['admin'] = true;
+                $_SESSION['ejecutivo'] = true;
                 echo json_encode(['res' => 1]);
             } else {
                 echo json_encode(['res' => 0]);
             }
             break;
-        case 'ejecutivo':
+        case 'cliente':
             if ($clave == 123) {
-                $_SESSION['ejecutivo'] = true;
+                $_SESSION['cliente'] = true;
                 echo json_encode(['res' => 2]);
             } else {
                 echo json_encode(['res' => 0]);
@@ -35,7 +35,7 @@ if (@$_GET['iniciarSesion']) {
 
 // CERRAR SESION
 if (@$_GET['cerrarSesion']) {
-    $_SESSION['admin'] = $_SESSION['ejecutivo'] = NULL;
+    $_SESSION['ejecutivo'] = $_SESSION['cliente'] = NULL;
     header('location: login.php');
     exit();
 }

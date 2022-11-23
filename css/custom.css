@@ -2,7 +2,54 @@
 
 .body,
 .container {
-    height: 100vh;
+    min-height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(45deg, black, gray);
+}
+
+#admin-ui,
+#client-ui {
+    box-shadow: 0 0 10px #000;
+}
+
+header {
+    color: #fff;
+}
+
+#tipo-usuario {
+    color: #fff;
+}
+
+#id-usuario {
+    color: orange;
+}
+
+hr {
+    color: lightgray;
+}
+
+#montos {
+    background-image: linear-gradient(to bottom, #dc4500, #932e00);
+    color: #fff;
+}
+
+.accordion-button {
+    background-image: linear-gradient(to bottom, #0094ae, #004754);
+}
+
+.accordion-button h4 {
+    color: #fff;
+}
+
+.accordion-body {
+    background-color: #333;
+    color: #fff;
+}
+
+.table {
+    box-shadow: 2px 2px 5px #000;
 }
 
 .table tr {
