@@ -33,7 +33,7 @@ if (!$_SESSION['ejecutivo']) {
 
             <div class="input-group mb-3">
                 <span class="input-group-text"><i class="icon-user"></i> Cliente</span>
-                <input id="co-cli" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#clientes" value="" placeholder="Clic para cargar cliente" readonly>
+                <input id="co-cli" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#clientes" value="" placeholder="Seleccionar cliente" readonly>
             </div>
 
             <!-- RESUMEN DE CUENTA -->

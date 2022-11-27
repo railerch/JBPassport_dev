@@ -197,8 +197,8 @@ if (!$_SESSION['cliente']) {
                                 <!-- Noticias -->
                                 <div class="card mb-2">
                                     <div class="card-body d-flex p-0 py-2">
-                                        <div class="col-3">
-                                            <img class="card-img-top" src="img/logo01.png" alt="Title">
+                                        <div class="col-3 p-2">
+                                            <img class="card-img-top" src="img/noticia-img-01.jpg" alt="Title">
                                         </div>
                                         <div class="col-9 text-muted p-2">
                                             <h4 class="card-title">Noticia 1</h4>
@@ -209,8 +209,8 @@ if (!$_SESSION['cliente']) {
 
                                 <div class="card mb-2">
                                     <div class="card-body d-flex p-0 py-2">
-                                        <div class="col-3">
-                                            <img class="card-img-top" src="img/logo01.png" alt="Title">
+                                        <div class="col-3 p-2">
+                                            <img class="card-img-top" src="img/noticia-img-02.jpg" alt="Title">
                                         </div>
                                         <div class="col-9 text-muted p-2">
                                             <h4 class="card-title">Noticia 2</h4>
