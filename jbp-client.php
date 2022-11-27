@@ -12,7 +12,7 @@ if (!$_SESSION['cliente']) {
 
 <head>
     <?php include('head.php'); ?>
-    <title>JBPassport | Estado de cuenta</title>
+    <title>JBPassport | Cliente</title>
 </head>
 
 <body>

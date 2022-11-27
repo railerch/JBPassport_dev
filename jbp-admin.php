@@ -12,7 +12,7 @@ if (!$_SESSION['ejecutivo']) {
 
 <head>
     <?php include('head.php'); ?>
-    <title>JBPassport | Estado de cuenta</title>
+    <title>JBPassport | Ejecutivo</title>
 </head>
 
 <body>
