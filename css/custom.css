@@ -1,12 +1,26 @@
 /* ESTILOS PERSONALIZADOS*/
 
-.body,
+body,
 .container {
     min-height: 100vh;
+    min-width: 300px;
 }
 
 body {
-    background-image: linear-gradient(45deg, black, gray);
+    background: lightgray;
+}
+
+#login-header {
+    height: 40vh;
+    background-color: #000;
+    background-image: url("../img/Login_bg_blur.png");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#logo {
+    width: 50%;
 }
 
 #admin-ui,
@@ -14,30 +28,16 @@ body {
     box-shadow: 0 0 10px #000;
 }
 
-header {
-    color: #fff;
-}
-
-#tipo-usuario {
-    color: #fff;
-}
-
+#tipo-usuario,
 #id-usuario {
-    color: orange;
+    color: #333;
 }
 
-hr {
-    color: lightgray;
-}
-
-#montos {
-    background-image: linear-gradient(to bottom, #dc4500, #932e00);
-    color: #fff;
-}
-
+#montos,
 .accordion-button,
 .modal-header {
-    background-image: linear-gradient(to bottom, #0094ae, #004754);
+    background-image: linear-gradient(to bottom, #555, #222);
+    color: #fff;
 }
 
 .accordion-button h4,
