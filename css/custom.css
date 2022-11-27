@@ -33,6 +33,10 @@ body {
     color: #333;
 }
 
+#co-cli {
+    max-width: 50%;
+}
+
 #montos,
 .accordion-button,
 .modal-header {
