@@ -103,7 +103,7 @@ if (window.location.pathname.includes("login.php")) {
             switch (res.res.st) {
                 case 400:
                     document.getElementById("sesion-frm").reset();
-                    aviso_usuario("danger", "Datos invalidos", 0);
+                    aviso_usuario("danger", "Datos invalidos", 2500);
                     break;
                 case 1:
                     // Permitir acceso a la vista de personal administrativo
