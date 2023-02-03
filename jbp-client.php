@@ -13,6 +13,10 @@ if (!$_SESSION['cliente']) {
 <head>
     <?php include('head.php'); ?>
     <title>JBPassport | Cliente</title>
+    <script type="text/javascript">
+        // Restringir el acceso a la vista si no se ha iniciado sesion
+        if (!sessionStorage.getItem("cli")) window.location.replace("login.php")
+    </script>
 </head>
 
 <body>

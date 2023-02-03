@@ -15,9 +15,11 @@
                 <p class="card-text"><b>Nuestro servicio al alcence de tus manos</b></p>
             </div>
             <div id="aviso-usuario"></div>
-            <div class="mb-3">
-                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="ID usuario">
-                <input type="password" name="clave" id="clave" class="form-control mt-2" placeholder="Clave">
+            <div id="sesion-frm-div" class="mb-3">
+                <form id="sesion-frm">
+                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="ID usuario">
+                    <input type="password" name="clave" id="clave" class="form-control mt-2" placeholder="Clave">
+                </form>
                 <div class="d-grid gap-2">
                     <button id="login-btn" class="btn btn-outline-secondary mt-3"><i class="icon-login"></i> Iniciar sesión</button>
                     <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#formulario-membresia">Solicitar membresía <b>JBP Passport Club</b></button>
@@ -57,11 +59,6 @@
         </div>
     </div>
 
-
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    </script>
     <footer>
         <?php include('footer.php'); ?>
     </footer>

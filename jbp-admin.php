@@ -1,18 +1,13 @@
-<?php
-session_start();
-
-// VALIDAR INICIO DE SESION
-if (!$_SESSION['ejecutivo']) {
-    header('location:login.php');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <?php include('head.php'); ?>
     <title>JBPassport | Ejecutivo</title>
+    <script type="text/javascript">
+        // Restringir el acceso a la vista si no se ha iniciado sesion
+        if (!sessionStorage.getItem("adm")) window.location.replace("login.php")
+    </script>
 </head>
 
 <body>
@@ -276,7 +271,7 @@ if (!$_SESSION['ejecutivo']) {
 
                 <!-- CERRAR SESION -->
                 <div class="text-center pt-3">
-                    <a href="main-ctrl.php?cerrarSesion=true" id="logout-btn" class="btn btn-outline-dark"><i class="icon-logout"></i> Cerrar sesión</a>
+                    <button id="logout-btn" class="btn btn-outline-dark"><i class="icon-logout"></i> Cerrar sesión</button>
                 </div>
             </div>
 
