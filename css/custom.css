@@ -67,3 +67,9 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
+/* DATOS DEL CLIENTE EN JPB-ADMIN.PHP */
+
+#datos-cliente {
+    display: none;
+}

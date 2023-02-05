@@ -32,7 +32,7 @@ if (!$_SESSION['cliente']) {
         </header>
         <hr>
         <main class="">
-            <h3 id="tipo-usuario"><i class="icon-user"></i>ID Cliente: <span id="id-usuario">32563</span></h3>
+            <h3 id="tipo-usuario"><i class="icon-user"></i>ID Cliente: <span id="id-cliente">32563</span></h3>
             <hr>
 
             <!-- RESUMEN DE CUENTA -->
